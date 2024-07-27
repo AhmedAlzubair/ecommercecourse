@@ -32,7 +32,8 @@ class CardOrdersListArchive extends GetView<OrdersArchiveController> {
                   Text(
                     Jiffy.parse(listdata.ordersDatetime.toString(), pattern:"yyyy-MM-dd").fromNow(),
                     style: const TextStyle(
-                        color: AppColor.primaryColor,
+                        color: AppColor.primaryColor2,
+
                         fontWeight: FontWeight.bold),
                   )
                 ],
@@ -51,7 +52,7 @@ class CardOrdersListArchive extends GetView<OrdersArchiveController> {
                 children: [
                   Text("Total Price : ${listdata.ordersTotalprice} SR ",
                       style: const TextStyle(
-                          color: AppColor.primaryColor,
+                          color: AppColor.primaryColor2,
                           fontWeight: FontWeight.bold)),
                   const Spacer(),
                   MaterialButton(
@@ -59,8 +60,8 @@ class CardOrdersListArchive extends GetView<OrdersArchiveController> {
                       Get.toNamed(AppRoute.ordersdetails,
                           arguments: {"ordersmodel": listdata});
                     },
-                    color: AppColor.thirdColor,
-                    textColor: AppColor.secondColor,
+                    color: AppColor.primaryColor2,
+                    textColor: AppColor.whiteColor,
                     child: const Text("Details"),
                   ),
                   const SizedBox(

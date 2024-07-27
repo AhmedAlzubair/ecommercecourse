@@ -15,13 +15,14 @@ class AddressView extends StatelessWidget {
     AddressViewController controller = Get.put(AddressViewController());
     return Scaffold(
         appBar: AppBar(
-          title:  Text('72'.tr),
+          title:  Text('72'.tr,style: TextStyle( color: AppColor.primaryColor2,)),
         ),
         floatingActionButton: FloatingActionButton(
+          backgroundColor:AppColor.primaryColor2,
             onPressed: () {
               Get.toNamed(AppRoute.addressadd);
             },
-            child: Icon(Icons.add)),
+            child: Icon(Icons.add,color: AppColor.whiteColor)),
         body: GetBuilder<AddressViewController>(
           builder: (controller) => HandlingDataView(
             statusRequest: controller.statusRequest,
@@ -59,7 +60,7 @@ class CardAddress extends StatelessWidget {
             subtitle: Text(
                 "${addressModel.addressCity!} ${addressModel.addressStreet}"),
             trailing: IconButton(
-                onPressed: onDelete, icon: Icon(Icons.delete_outline),color: AppColor.primaryColor),
+                onPressed: onDelete, icon: Icon(Icons.delete_outline),color: AppColor.primaryColor2),
           )),
     );
   }

@@ -47,7 +47,7 @@ class CardOrdersList extends GetView<OrdersPendingController> {
                 children: [
                   Text("Total Price : ${listdata.ordersTotalprice} SR ",
                       style: const TextStyle(
-                          color: AppColor.primaryColor,
+                          color: AppColor.primaryColor2,
                           fontWeight: FontWeight.bold)),
                   const Spacer(),
                   MaterialButton(
@@ -55,8 +55,8 @@ class CardOrdersList extends GetView<OrdersPendingController> {
                       Get.toNamed(AppRoute.ordersdetails,
                           arguments: {"ordersmodel": listdata});
                     },
-                    color: AppColor.thirdColor,
-                    textColor: AppColor.secondColor,
+                    color: AppColor.primaryColor2,
+                    textColor: AppColor.whiteColor,
                     child: const Text("Details"),
                   ),
                   SizedBox(width: 10),
@@ -69,15 +69,6 @@ class CardOrdersList extends GetView<OrdersPendingController> {
                     child: const Text("Delete"),
                   ),
                    SizedBox(width: 10),
-                  // MaterialButton(
-                  //   onPressed: () {
-
-                  //     controller.deleteOrder(listdata.ordersId!);
-                  //   },
-                  //   color: AppColor.thirdColor,
-                  //   textColor: AppColor.secondColor,
-                  //   child: const Text("Ratind"),
-                  // )
                 if (listdata.ordersStatus! == "3")   MaterialButton(
                     onPressed: () {
 

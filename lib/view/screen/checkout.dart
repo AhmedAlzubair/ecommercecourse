@@ -24,7 +24,7 @@ class Checkout extends StatelessWidget {
       bottomNavigationBar: Container(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: MaterialButton(
-            color: AppColor.secondColor,
+            color: AppColor.primaryColor2,
             textColor: Colors.white,
             onPressed: () {
               controller.checkout();

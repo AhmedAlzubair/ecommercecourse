@@ -4,7 +4,9 @@ import 'package:ecommercecoursenmmm/core/class/handlingdataview.dart';
 import 'package:ecommercecoursenmmm/view/widget/orders/orderslistcard.dart';
 import 'package:ecommercecoursenmmm/view/widget/orders/orderslistcardarchive.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart'; 
+import 'package:get/get.dart';
+
+import '../../../core/constant/color.dart';
 
 class OrdersArchiveView extends StatelessWidget {
   const OrdersArchiveView({Key? key}) : super(key: key);
@@ -13,7 +15,8 @@ class OrdersArchiveView extends StatelessWidget {
     Get.put(OrdersArchiveController());
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Orders'),
+          title: const Text('Archive',style: TextStyle( color: AppColor.primaryColor2,),),
+
         ),
         body: Container(
           padding:const  EdgeInsets.all(10),

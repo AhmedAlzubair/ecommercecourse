@@ -19,7 +19,7 @@ class Settings extends StatelessWidget {
               clipBehavior: Clip.none,
               alignment: Alignment.center,
               children: [
-                Container(height: Get.width / 3, color: AppColor.primaryColor),
+                Container(height: Get.width / 3, color: AppColor.primaryColor2),
                 Positioned(
                     top: Get.width / 3.9,
                     child: Container(

@@ -7,6 +7,8 @@ import 'package:ecommercecoursenmmm/view/widget/auth/customtextformauth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../core/constant/color.dart';
+
 class AddressAddDetails extends StatelessWidget {
   const AddressAddDetails({Key? key}) : super(key: key);
 
@@ -16,7 +18,7 @@ class AddressAddDetails extends StatelessWidget {
         Get.put(AddAddressDetailsController());
     return Scaffold(
       appBar: AppBar(
-        title:  Text('65'.tr),
+        title:  Text('65'.tr,style: TextStyle( color: AppColor.primaryColor2,)),
       ),
       body: Container(
           padding:const EdgeInsets.all(15),
