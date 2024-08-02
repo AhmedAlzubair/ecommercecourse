@@ -3,15 +3,15 @@
 The application contains several restaurants. 
 ## App Admin,User,Delivery 
 ### -Admin: 
- -Management Categories,Books,orders,publishers,users.
+ -Management Categories,Products,orders,users.
  #### User:
- -The user is able to browse, search for books, and purchase them. 
+ -The user is able to browse, search for Products, and buy them. 
  -The user can management your profil and address.
  -The user can purchase food and also donate by purchasing food and making it in the application for free.
  ##### Delivery: 
  -Can management the orders.
 
-###### Use
+ ###### Use
 -Flutter
 -Dart
 -Gitx
